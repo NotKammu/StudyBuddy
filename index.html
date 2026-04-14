@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyBuddy</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="logged-out">
+
+  <div id="onboarding-screen" class="onboarding-screen hidden">
+    <div class="onboarding-card">
+      <div class="app-badge">StudyBuddy</div>
+      <h1>Welcome</h1>
+      <p class="onboarding-text">
+        Create your username to continue.
+      </p>
+
+      <div class="warning-box">
+        <strong>Important:</strong> Your data is saved only in your browser’s local storage.
+        If you clear browser data or uninstall the browser, everything will be lost.
+        Use export and import in Settings to keep a backup.
+      </div>
+
+      <label for="username-input" class="field-label">Username</label>
+      <input type="text" id="username-input" placeholder="Enter username" maxlength="30" />
+
+      <label class="policy-row">
+        <input type="checkbox" id="policy-check" />
+        I understand that data is stored locally in this browser and I should export it to keep a backup.
+      </label>
+
+      <button id="create-account-btn" class="btn create-btn" disabled>
+        Create Account
+      </button>
+      <button id="go-to-import-btn" class="btn secondary-btn">
+        Already have account?
+      </button>
+      <br><br>
+
+      <div id="import-section" class="hidden">
+        <p class="onboarding-text">Import your backup file</p>
+
+        <button id="import-data-onboarding-btn" class="btn">
+            Upload JSON File
+        </button>
+
+        <input type="file" id="onboarding-import-file" accept="application/json" hidden>
+      </div>
+    </div>
+  </div>
+
+  <nav id="sidebar">
+    <div class="logo-container">
+        <img src="resources/StudyBuddy logo design.png" alt="StudyBuddy Logo" class="logo">
+        <h2 class="logo-text">StudyBuddy</h2>
+    </div>
+
+    <ul>
+      <li><a href="#/dashboard">📊Dashboard</a></li>
+      <li><a href="#/tasks">✅Tasks</a></li>
+      <li><a href="#/timer">⏱️Study Timer</a></li>
+      <li><a href="#/attendance">📅Attendance</a></li>
+      <li><a href="#/notes">📝Notes</a></li>
+      <li><a href="#/settings">⚙️Settings</a></li>
+    </ul>
+  </nav>
+
+  <main id="app-shell" class="hidden">
+    <div id="content"></div>
+  </main>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
