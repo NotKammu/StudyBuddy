@@ -23,7 +23,6 @@ StudyBuddy is a frontend-based web application that helps students manage their 
 - Cloud sync
 - User login
 - Mobile app version
-- Dark mode toggle
 - Notifications and reminders
 - Better analytics for study habits
 - Image upload support in Notes
