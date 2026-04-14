@@ -37,7 +37,7 @@ This project is licensed under the MIT License.
 ## Link
 
 Check out StudyBuddy here:  
-👉 
+👉  https://notkammu.github.io/StudyBuddy/
 
 ## Screenshots
 
