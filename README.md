@@ -52,8 +52,8 @@ Check out StudyBuddy here:
 
 
 ## Created By:
-Adithya M Kammath
-Ganesh VR
+- Adithya M Kammath
+- Ganesh VR
 
 
 
